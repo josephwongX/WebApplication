@@ -1,0 +1,87 @@
+@{
+    ViewBag.Title = "ProductGallery";
+    var category = Request.QueryString["category"];
+    ViewBag.category = category;
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<!--<h1><?php echo ucwords($category); ?></h1>-->
+<div class="grid_container">
+    <!--
+        <?php
+    //display the list of products as a gallery format
+
+    // for ($i = 0; $i < count($productsList); $i++){
+    for ($i = 0; $i < 20; $i++){
+    $productId = "product".$i;
+    echo '
+    -->
+    <div class="grid_item">
+        <a target="_blank" href="productDetails.php?productName=amd_ryzen_5_5600">
+            <img src="Image/amd_ryzen_5_5600.webp" alt="AMD Ryzen 5 5600" width="100rem" height="100rem">
+        </a>
+        <div class="desc '.$productId.'">
+            <p class="title"> AMD Ryzen 5 5600 </p>
+            <p class="price"> RM 949.00 </p>
+            <p class="rating"> ***** </p>
+            <p class="quantitySold"> 1k sold </p>
+            <p class="vendorLocation"> Kuala Lumpur </p>
+        </div>
+    </div>
+    <!--    ';
+        }
+        ?>
+        -->
+</div>
+
+
+<!-- <div class="gallery grid_item">
+  <a target="_blank" href="productDetails.php?productName=amd_ryzen_5_7600X">
+    <img src="Image/amd_ryzen_5_7600X.webp" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">
+    <p class="productTitle2"> AMD Ryzen 5 7600X </p>
+    <p class="productPrice2"> RM 949.00 </p>
+    <p class="productRating2"> ***** 1k sold </p>
+    <p class="vendorLocation2"> Kuala Lumpur </p>
+  </div>
+</div>
+
+<div class="gallery grid_item">
+  <a target="_blank" href="productDetails.php?productName=amd_ryzen_5_7600X">
+    <img src="" alt="" width="600" height="400">
+  </a>
+  <div class="desc">
+  <p class="productTitle2"> AMD Ryzen 5 3600XT </p>
+    <p class="productPrice2"> RM 949.00 </p>
+    <p class="productRating2"> ***** 1k sold </p>
+    <p class="vendorLocation2"> Kuala Lumpur </p>
+  </div>
+</div>
+
+<div class="gallery grid_item">
+  <a target="_blank" href="productDetails.php?productName=amd_ryzen_5_7600X">
+    <img src="" alt="" width="600" height="400">
+  </a>
+  <div class="desc">
+    <p class="productTitle2"> AMD Ryzen 5 2600X </p>
+    <p class="productPrice2"> RM 949.00 </p>
+    <p class="productRating2"> //*****// 1k sold </p>
+    <p class="vendorLocation2"> Kuala Lumpur </p>
+  </div>
+</div>
+<div class="gallery grid_item">
+  <a target="_blank" href="productDetails.php?productName=amd_ryzen_5_7600X">
+    <img src="" alt="" width="600" height="400">
+  </a>
+  <div class="desc">
+    <p class="productTitle2"> AMD Ryzen 5 1600X </p>
+    <p class="productPrice2"> RM 949.00 </p>
+    <p class="productRating2"> //*****// 1k sold </p>
+    <p class="vendorLocation2"> Kuala Lumpur </p>
+  </div>
+</div>
+ -->
